@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Drinks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/cmv_drink_styles.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="../Imagens/favicon.ico">
 
+</head>
+
+<body>
+    
     <div class="dashboard">
         <div class="card full-width">
             <div class="header-actions">
                 <h2>Meus Drinks (Receituário)</h2>
                 <a href="#modal-cadastro" class="btn-save btn-new" onclick="prepareNewDrink()">+ Novo Drink</a>
             </div>
-            
+
             <div id="saved-drinks-container" class="todo-list">
-                </div>
+            </div>
         </div>
     </div>
 
     <div id="modal-cadastro" class="modal">
         <div class="modal-content card">
             <a href="#" class="close-modal" onclick="clearForm()">&times;</a>
-            
+
             <h2 id="modal-title">Cadastrar Novo Drink</h2>
 
             <div id="calculator-form">
@@ -68,4 +73,5 @@
 
     <script src="../Scripts/cmv_drink_scripts.js"></script>
 </body>
+
 </html>
