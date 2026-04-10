@@ -1,14 +1,14 @@
-# 👨‍💻 Portfólio Pessoal & Projetos - Rodrigo S. Vieira
+# Portfólio Pessoal & Projetos - Rodrigo S. Vieira
 
 Bem-vindo ao repositório do meu site pessoal e portfólio! Este projeto não apenas apresenta quem eu sou, minhas habilidades e meu background multidisciplinar (Relações Internacionais, Enfermagem e Tecnologia), mas também serve como base para hospedar meus projetos práticos e ferramentas úteis que desenvolvo.
 
-## 🎯 Objetivo do Repositório
+##  Objetivo do Repositório
 
 O objetivo principal deste repositório é ser a minha vitrine profissional na web, demonstrando minhas habilidades em desenvolvimento Front-end (HTML, CSS, JavaScript) e lógica de programação. Além da página de apresentação, o repositório contém subprojetos funcionais, como uma **Calculadora de CMV para Drinks**.
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 ### 1. Portfólio Pessoal (`index.html`)
 * **Design Responsivo:** Adaptável para desktops, tablets e smartphones.
@@ -28,7 +28,7 @@ Uma ferramenta completa e isolada para bartenders e donos de bares calcularem cu
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 Este projeto foi construído utilizando tecnologias web fundamentais (Vanilla), sem o uso de frameworks pesados, para focar na performance e consolidação de conhecimentos:
 
@@ -61,4 +61,4 @@ Este projeto foi construído utilizando tecnologias web fundamentais (Vanilla), 
 └── 📁 Imagens/                # (Diretório para assets visuais, favicons e prints)
 ```
 
-Versao 2.3.5
+Versao 2.3.6
