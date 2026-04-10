@@ -15,6 +15,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const dropdown = document.querySelector('.dropdown');
+    const dropBtn = document.querySelector('.dropbtn');
+
+    if (dropdown && dropBtn) {
+        dropBtn.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const isOpen = dropdown.classList.toggle('open');
+            dropBtn.setAttribute('aria-expanded', String(isOpen));
+        });
+
+        document.addEventListener('click', () => {
+            if (dropdown.classList.contains('open')) {
+                dropdown.classList.remove('open');
+                dropBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+
     const sections = document.querySelectorAll('section');
     const headerHeight = document.querySelector('.header').offsetHeight;
 

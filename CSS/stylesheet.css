@@ -73,6 +73,62 @@ body {
     cursor: pointer;
 }
 
+/* Dropdown do usuário */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    border: none;
+    background: transparent;
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.45rem 0.65rem;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.dropbtn:hover,
+.dropbtn:focus-visible {
+    background-color: rgba(0, 123, 255, 0.12);
+    color: var(--primary-color);
+    outline: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 180px;
+    background-color: var(--card-bg-color);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.dropdown-content a {
+    display: block;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 123, 255, 0.08);
+    color: var(--primary-color);
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content,
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
 /* Botão de Modo Escuro (Dark Mode Toggle) */
 .theme-switch {
     position: relative;
@@ -460,6 +516,30 @@ body.dark-mode .navbar {
     box-shadow: var(--dark-shadow);
 }
 
+body.dark-mode .dropbtn {
+    color: var(--dark-text-color);
+}
+
+body.dark-mode .dropbtn:hover,
+body.dark-mode .dropbtn:focus-visible {
+    color: var(--dark-primary-color);
+    background-color: rgba(138, 180, 248, 0.2);
+}
+
+body.dark-mode .dropdown-content {
+    background-color: var(--dark-card-bg-color);
+    box-shadow: var(--dark-shadow);
+}
+
+body.dark-mode .dropdown-content a {
+    color: var(--dark-text-color);
+}
+
+body.dark-mode .dropdown-content a:hover {
+    background-color: rgba(138, 180, 248, 0.16);
+    color: var(--dark-primary-color);
+}
+
 
 /* Responsividade */
 @media (max-width: 992px) {
@@ -500,6 +580,11 @@ body.dark-mode .navbar {
 
     .navbar a {
         margin: 1rem 0;
+    }
+
+    .dropdown-content {
+        right: auto;
+        left: 0;
     }
 
     h2 {
